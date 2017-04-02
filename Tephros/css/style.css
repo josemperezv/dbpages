@@ -1,0 +1,371 @@
+/*!
+ * Start Bootstrap - Agency Bootstrap Theme (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+body {
+    overflow-x: hidden;
+    font-family: felix titling;
+    background-image: url(../img/BetweenBck2.png);
+    background-position: center top;
+    background-repeat: none;
+    background-attachment: fixed;
+}
+
+.text-muted {
+    color: #666;
+}
+
+.text-primary {
+    color: #fde05e;
+}
+
+p {
+    font-size: 14px;
+    line-height: 1.75;
+}
+
+p.large {
+    font-size: 16px;
+}
+
+a,
+a:hover,
+a:focus,
+a:active,
+a.active {
+    outline: 0;
+}
+
+a {
+    color: #922;
+    font-family: Droid Serif;
+}
+
+a:hover,
+a:focus,
+a:active,
+a.active {
+    color: #922;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-transform: uppercase;
+    font-family: felix titling;
+    font-weight: 700;
+}
+
+.img-centered {
+    margin: 0 auto;
+}
+
+.navbar-default {
+    border-color: transparent;
+    background-color: #222;
+    opacity: 0.9;
+}
+
+.navbar-default .navbar-brand {
+    font-family: felix titling;
+    color: #fff;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand:active,
+.navbar-default .navbar-brand.active {
+    color: #922;
+}
+
+.navbar-default .navbar-collapse {
+    border-color: rgba(255,255,255,.02);
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #fde05e;
+    background-color: #922;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: #922;
+}
+
+.navbar-default .nav li a {
+    text-transform: uppercase;
+    font-family: Droid serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.navbar-default .nav li a:hover,
+.navbar-default .nav li a:focus {
+    outline: 0;
+    color: #922;
+}
+
+.navbar-default .navbar-nav>.active>a {
+    border-radius: 0;
+    color: #fff;
+    background-color: #922;
+}
+
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
+    color: #fff;
+    background-color: #006699;
+}
+
+@media(min-width:768px) {
+    .navbar-default {
+        padding: 25px 0;
+        border: 0;
+        background-color: transparent;
+        -webkit-transition: padding .3s;
+        -moz-transition: padding .3s;
+        transition: padding .3s;
+    }
+
+    .navbar-default .navbar-brand {
+        font-size: 2em;
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        transition: all .3s;
+    }
+
+    .navbar-default .navbar-nav>.active>a {
+        border-radius: 3px;
+    }
+
+    .navbar-default.navbar-shrink {
+        padding: 10px 0;
+        background-color: #222;
+    }
+
+    .navbar-default.navbar-shrink .navbar-brand {
+        font-size: 1.5em;
+    }
+}
+
+header {
+    text-align: center;
+    color: #fff;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+header .intro-text {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+header .intro-text .intro-heading {
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    font-family: felix titling;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 50px;
+}
+
+#download {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    color: #ccc; 
+}
+
+#video {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+}
+
+#preorder {
+    color: #FFF;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+}
+
+.prebutton {
+    border: none;
+    background-color: transparent;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    width:200px;
+    min-height:30px;
+}
+
+.buttonpre {
+    border: 2px solid #922;
+}
+
+.buttonpre:hover {
+    background-color: #922;
+}
+
+#newsletter {
+    color: #FFF;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+}
+
+input {
+  color: #000;
+  border:none;
+  font-size:12px;
+  width:200px;
+  min-height:30px;
+  outline: none;
+  font-family: Droid serif;
+
+  -webkit-border-radius: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.email-input {
+  background: rgba(255, 255, 255, 0.3);
+  color: #f1f0f5;
+  padding: 0 20px;
+  font-size: 0.85em;
+  width: 222px
+}
+
+.email-input:focus {
+  outline: 1px solid #fff
+}
+
+.signup-input {
+    width:150px;
+}
+
+section {
+    padding: 100px 0;
+}
+
+section h2.section-heading {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 25px;
+}
+
+section h3.section-subheading {
+    margin-bottom: 25px;
+    text-transform: none;
+    font-family: felix titling;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+}
+
+@media(min-width:768px) {
+    section {
+        padding: 40px 30px;
+    }
+}
+
+.service-heading {
+    margin: 10px 0;
+    text-transform: none;
+}
+
+#follow {
+    width: 50%;
+    text-align: center;
+    margin: auto;
+}
+
+footer {
+    padding: 25px 0;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+}
+
+footer span.copyright {
+    text-transform: uppercase;
+    text-transform: none;
+    font-family: felix titling;
+    line-height: 20px;
+    color: #ddd;
+    font-size: 12px;
+}
+
+footer ul.quicklinks {
+    margin-bottom: 0;
+    text-transform: uppercase;
+    text-transform: none;
+    font-family: felix titling;
+    line-height: 40px;
+}
+
+ul.social-buttons {
+    margin-bottom: 0;
+}
+
+ul.social-buttons li a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    font-size: 20px;
+    line-height: 40px;
+    outline: 0;
+    color: #fff;
+    background-color: #888;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+}
+
+ul.social-buttons li a:hover,
+ul.social-buttons li a:focus,
+ul.social-buttons li a:active {
+    background-color: #006699;
+}
+
+::-moz-selection {
+    text-shadow: none;
+    background: #fde05e;
+}
+
+::selection {
+    text-shadow: none;
+    background: #006699;
+}
+
+img::selection {
+    background: 0 0;
+}
+
+img::-moz-selection {
+    background: 0 0;
+}
+
+body {
+    webkit-tap-highlight-color: #006699;
+}
