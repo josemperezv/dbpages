@@ -155,7 +155,7 @@
     <footer>
         <div class="container">
 	    <span class="copyright">&copy; 2017 Tephros. All Rights Reserved. </span><br/>
-        <img src="img/powered.png" width="100"></img>
+        <a href="http://www.dbstudio.com.ve" target="_blank"><img src="img/powered.png" width="100"></img></a>
         </div>
     </footer>
 

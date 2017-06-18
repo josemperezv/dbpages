@@ -179,7 +179,6 @@ else                /* send the submitted data */
               <li><a href="servicios/master.html">Masterización</a></li>
               <li><a href="#">Producción Musical</a></li>
               <li><a href="servicios/midi.html">Secuencias y Programación</a></li>
-              <li><a href="#">Músicos de Sesión</a></li>
             </ul>
         </div>
         <div class="block">
@@ -188,7 +187,6 @@ else                /* send the submitted data */
               <li><a href="servicios/web.html">Presencia Web</a></li>
               <li><a href="servicios/distribucion.html">Distribución</a></li>
               <li><a href="#">Digitalización</a></li>
-              <li><a href="#">Mantenimiento</a></li>
             </ul>
         </div>
         <div class="block">
