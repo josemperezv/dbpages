@@ -20,7 +20,8 @@ body {
 }
 
 .portfolio-item {
-  margin-bottom: 30px;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
 }
 
 .pagination {
