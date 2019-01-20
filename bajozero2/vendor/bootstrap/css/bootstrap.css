@@ -4007,8 +4007,8 @@ font-size: 12px;
 }
 
 .navbar-nav > li{
-  padding-left:1.5rem;
-  padding-right:1.5rem;
+  padding-left:0.25rem;
+  padding-right:0.25rem;
 }
 
 @media (max-width: 1200px) {
@@ -4498,6 +4498,11 @@ font-size: 12px;
   padding-right:0.25rem;
 }
 
+@media (max-width: 768px) {
+  .footer-nav {
+  }
+}
+
 .card {
   position: relative;
   display: -webkit-box;
@@ -4912,18 +4917,18 @@ a.news-more:hover{
 }
 
 .contactography {
-    margin-top: 6rem;
+    margin-top: 2rem;
 }
 
 @media (min-width: 992px) {
   .contactography {
-    margin-top: 8rem;
+    margin-top: 4rem;
   }
 }
 
 @media (min-width: 1368px) {
   .contactography {
-    margin-top: 18rem;
+    margin-top: 8rem;
   }
 }
 
@@ -4967,7 +4972,7 @@ a.news-more:hover{
 }
 
 .fa-instagram:hover {
-  color: #e95950;
+  color: #e1306c;
 }
 
 .fa-youtube:hover {
@@ -4976,6 +4981,33 @@ a.news-more:hover{
 
 .fa-soundcloud:hover {
   color: #ff7700;
+}
+
+.fa-bandcamp:hover {
+  color: #629aa9;
+}
+
+.fa-apple:hover {
+  color: #c7c8ca;
+}
+
+.fa-spotify:hover {
+  color: #1db954;
+}
+
+.fa-google-play:hover {
+  color: #ff8800;
+}
+
+.crop {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+
+.crop img {
+    width: 500px;
+    margin: -374px 0 0 0;
 }
 
 .breadcrumb {

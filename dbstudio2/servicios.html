@@ -1,0 +1,340 @@
+<!DOCTYPE HTML>
+<html>
+		<head>
+		
+		    <meta charset="utf-8">
+			<meta http-equiv="X-UA-Compatible" content="IE=edge">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+			
+			<!-- Title -->
+			<title>dbStudio | Servicios</title>
+			
+			<!-- Bootstrap & Font-Awesome CSS -->
+			<link rel="stylesheet" href="css/bootstrap.min.css" type='text/css'>
+			<link rel="stylesheet" href="css/font-awesome.min.css" type='text/css'>
+			
+			<!-- Custom CSS -->
+			<link rel="stylesheet" href="css/style.css" type='text/css'>
+			<link rel="stylesheet" href="css/responsive.css" type='text/css'>
+			
+			<!-- Animation CSS -->
+			<link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
+			
+		    <link href="images/favicon.png" rel='icon' type='image/x-icon'/>
+			
+			<!-- Google Webfont -->
+			<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+			<link href='http://fonts.googleapis.com/css?family=Noticia+Text:400,700' rel="stylesheet" type='text/css'>
+			
+			<!-- js files & script -->
+			<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+			<script type="text/javascript" src="js/hover_pack.js"></script>
+			<script type="text/javascript">
+								jQuery(document).ready(function($) {
+									$(".scroll").click(function(event){		
+										event.preventDefault();
+										$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+									});
+								});
+			</script>
+			<script type="text/javascript" src="js/move-top.js"></script>
+			<script type="text/javascript" src="js/easing.js"></script>
+			<script type="text/javascript" src="js/modernizr.js"></script>
+			<script type="text/javascript" src="js/retina.js"></script>
+			<script type="text/javascript" src="js/wow.min.js"></script>
+			<script>
+				 new WOW().init();
+			</script>
+			<script type="text/javascript">
+				// makes sure the whole site is loaded
+				jQuery(window).load(function() {
+				// will fade out the whole DIV that covers the website.
+				jQuery("#preloader").delay(2000).fadeOut("slow");
+				});
+			</script>
+			
+		</head>
+
+<!--=============================================================================================================-->
+
+		<body>
+			<div id="preloader">
+			  <div class="loader">
+			    <svg class="circular" viewBox="25 25 50 50">
+			      <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"/>
+			    </svg>
+			  </div>
+			</div>
+			
+			<div class="reading-progress"></div>
+
+            <header id="header"> <!-- Header Part -->
+			
+					<div class="serviceheader">
+						<div class="container">
+								<!-- start-top-nav -->
+								<div class="top-serv">
+									<div class="top-header">
+										<div class="responsive-logo">
+										   <a href="index.html"><img src="images/logo.png" alt=""/></a>
+										</div>
+									</div>
+									<nav class="nav">
+										<a id="menu-toggle" class="anchor-link" href="#"><img src="images/nav.png" alt="" /></a>
+										<ul class="nav-list cl-effect-5" id="menu">
+											<!-- logo -->
+											 <li class="logo"><a href="index.html"><img src="images/logo.png" alt=""/></a></li>
+											<!-- logo -->
+										</ul>
+									</nav>
+									<script type="text/javascript">
+										  $(document).ready(function() {
+										
+											$('#menu-toggle').click(function () {
+											  $('#menu').toggleClass('open');
+											  e.preventDefault();
+											});
+											
+										});
+									</script>
+								</div>
+							<!-- End-top-nav -->
+						</div>
+					</div>
+			</header>
+
+<!--=============================================================================================================-->
+
+            <section id="gallery-one-image-section"> <!-- About Gallery Part -->
+			
+					<div class="container-fluid">
+					    <div class="row" id="services">
+						    <div class="gallery-one-top wow fadeInLeft" data-wow-delay="0.0s">
+								<ul class="about_gallery2">
+									
+									<li>
+										<div class="gal1"> <!-- Gallery one image no : 1 -->
+												<figure><img src="images/gallery-one-img1.jpg" class="svcimage"></figure>
+												<div class="svcbutton2">
+													<a class='svcbtn2' href="#audio"><i class='fas fa-music'></i><br>Producción Musical</a>
+												</div>
+										</div>
+									</li>
+									
+									<li>
+										<div class="gal1"> <!-- Gallery one image no : 2 -->
+												<figure><img src="images/gallery-one-img2.jpg" class="svcimage"></figure>
+												<div class="svcbutton2">
+													<a class='svcbtn2' href="#mix"><i class="fas fa-sliders-h"></i><br>Mezcla y Master</a>
+												</div>
+										</div>
+									</li>
+
+									<li>
+										<div class="gal1"> <!-- Gallery one image no : 3 -->
+												<figure><img src="images/gallery-one-img3.jpg" class="svcimage"></figure>
+												<div class="svcbutton2">
+													<a class='svcbtn2' href="#design"><i class="fas fa-paint-brush"></i><br>Diseño Gráfico</a>
+												</div>
+										</div>
+									</li>
+
+									<li>
+										<div class="gal1"> <!-- Gallery one image no : 4 -->
+												<figure><img src="images/gallery-one-img4.jpg" class="svcimage"></figure>
+												<div class="svcbutton2">
+													<a class='svcbtn2' href="#video"><i class="fas fa-video"></i><br>Producción Audiovisual</a>
+												</div>
+										</div>
+									</li>
+
+									<li>
+										<div class="gal1"> <!-- Gallery one image no : 5 -->
+												<figure><img src="images/gallery-one-img5.jpg" class="svcimage"></figure>
+												<div class="svcbutton2">
+													<a class='svcbtn2' href="#distro"><i class="fas fa-cloud-upload-alt"></i><br>Distribución</a>
+												</div>
+										</div>
+									</li>
+
+									<li>
+										<div class="gal1"> <!-- Gallery one image no : 6 -->
+												<figure><img src="images/gallery-one-img6.jpg" class="svcimage"></figure>
+												<div class="svcbutton2">
+													<a class='svcbtn2' href="#web"><i class="fas fa-code"></i><br>Presencia Web</a>
+												</div>
+										</div>
+									</li>
+
+								</ul>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+
+					</div>
+            </section>
+
+<!--=============================================================================================================-->
+
+            <section id="services-section"> <!-- Services Section -->
+			
+					<div class="container-fluid">  
+						<div class="row" id="audio">
+							<div class="col-md-6 gals_left"> <!-- Gallery one image no : 1 -->
+								<figure><img src="images/gallery-one-img1.jpg" class="svcimage"></figure>
+								<div class="svcbutton">
+									<a class='svcbtn' href="#" target="_blank"><i class='fas fa-music'></i><br>Producción Musical</a>
+								</div>
+							</div>
+							<div class="col-md-6 gals_right wow fadeInUp" data-wow-delay="0.0s">
+								  <div class="gals_text">
+										<img src="images/tatto.png" class="img-responsive" alt=""/>
+										<h3>Nuestro equipo te ofrece todo lo que necesites para dar forma y vida a tus ideas de acuerdo a tus necesidades, bien sea música, arreglos o grabación.</h3>
+										<h3>Podemos crear para ti las secuencias que necesites a partir de tus ideas, o guiarte a tener la mejor ejecución posible. También contamos con un gran número de instrumentos virtuales que puedes adaptar fácilmente a tus ideas.</h3>
+								  </div>
+							</div>
+						</div> 
+					</div>
+
+					<div class="container-fluid">  
+						<div class="row" id="mix">
+							<div class="col-md-6 gals_right wow fadeInUp" data-wow-delay="0.0s">
+								  <div class="gals_text">
+										<img src="images/tatto.png" class="img-responsive" alt=""/>
+										<h3>Te ofrecemos servicio de mezcla y masterización para tus temas, discos completos o remezcla, para sacar lo máximo a tu música. Nos aseguramos que todo esté en su lugar, con un resultado claro y balanceado. Además podemos garantizar que tu música sea masterizada para iTunes bajo las especificaciones Apple.</h3>
+										<h3>También contamos con habilitación para suministrarte códigos ISRC venezolanos para cada una de tus creaciones.</h3>
+								  </div>
+							</div>
+							<div class="col-md-6 gals_left"> <!-- Gallery one image no : 2 -->
+								<figure><img src="images/gallery-one-img2.jpg" class="svcimage"></figure>
+								<div class="svcbutton">
+									<a class='svcbtn' href="#" target="_blank"><i class="fas fa-sliders-h"></i><br>Mezcla y Master</a>
+								</div>
+							</div>
+						</div> 
+					</div>
+
+					<div class="container-fluid">  
+						<div class="row" id="design">
+							<div class="col-md-6 gals_left"> <!-- Gallery one image no : 3 -->
+								<figure><img src="images/gallery-one-img3.jpg" class="svcimage"></figure>
+								<div class="svcbutton">
+									<a class='svcbtn' href="#" target="_blank"><i class="fas fa-paint-brush"></i><br>Diseño Gráfico</a>
+								</div>
+							</div>
+							<div class="col-md-6 gals_right wow fadeInUp" data-wow-delay="0.0s">
+								  <div class="gals_text">
+										<img src="images/tatto.png" class="img-responsive" alt=""/>
+										<h3>Nos encargamos del diseño de la imágen para ti o tu banda, incluyendo logo, tipografía o incluso el arte para tu nuevo Demo, EP o LP, en cualquier modelo o presentación que desees, proporcionando una imágen nueva y fresca.</h3>
+										<h3>En dbStudio contamos además con el apoyo de nuestros amigos de Música Impresa, quienes son especialistas en asesoría y diseño para tus proyectos musicales.</h3>
+								  </div>
+							</div>
+						</div> 
+					</div>
+
+					<div class="container-fluid">  
+						<div class="row" id="video">
+							<div class="col-md-6 gals_right wow fadeInUp" data-wow-delay="0.0s">
+								  <div class="gals_text">
+										<img src="images/tatto.png" class="img-responsive" alt=""/>
+										<h3>Mientras que hacer una gran canción es importante, acompañarla de una producción audiovisual que vaya con ella te ayudará a promover tus creaciones mas allá de los límites imaginados.</h3>
+										<h3>Podemos diseñar para ti videos musicales animados, lyric videos, o editar profesionalmente tus grabaciones para asegurarte un producto final impecable.</h3>
+								  </div>
+							</div>
+							<div class="col-md-6 gals_left"> <!-- Gallery one image no : 4 -->
+								<figure><img src="images/gallery-one-img4.jpg" class="svcimage"></figure>
+								<div class="svcbutton">
+									<a class='svcbtn' href="#" target="_blank"><i class="fas fa-video"></i><br>Producción Audiovisual</a>
+								</div>
+							</div>
+						</div> 
+					</div>
+
+					<div class="container-fluid">  
+						<div class="row" id="distro">
+							<div class="col-md-6 gals_left"> <!-- Gallery one image no : 5 -->
+								<figure><img src="images/gallery-one-img5.jpg" class="svcimage"></figure>
+								<div class="svcbutton">
+									<a class='svcbtn' href="#" target="_blank"><i class="fas fa-cloud-upload-alt"></i><br>Distribución</a>
+								</div>
+							</div>
+							<div class="col-md-6 gals_right wow fadeInUp" data-wow-delay="0.0s">
+								  <div class="gals_text">
+										<img src="images/tatto.png" class="img-responsive" alt=""/>
+										<h3>Llega a todo el mundo a través de las mayores tiendas de música digital. Publicamos tu música en los servicios mas reconocidos a nivel mundial, asegurando que esté correctamente identificada en tus diversos canales.</h3>
+										<h3>También nos encargamos de registrar cada una de tus obras en el Deposito Legal venezolano, asegurando que cumplas con los requisitos legales para la distribución dentro del país.</h3>
+								  </div>
+							</div>
+						</div> 
+					</div>
+
+					<div class="container-fluid">  
+						<div class="row" id="web">
+							<div class="col-md-6 gals_right wow fadeInUp" data-wow-delay="0.0s">
+								  <div class="gals_text">
+										<img src="images/tatto.png" class="img-responsive" alt=""/>
+										<h3>Creamos tu nueva presencia en línea mediante el diseño, desarrollo y construcción de tu sitio web y perfiles de redes sociales.</h3>
+										<h3>Establece una imágen original que ayude a impulsar tus creaciones a través del extenso mundo del Internet.</h3>
+								  </div>
+							</div>
+							<div class="col-md-6 gals_left"> <!-- Gallery one image no : 6 -->
+								<figure><img src="images/gallery-one-img6.jpg" class="svcimage"></figure>
+								<div class="svcbutton">
+									<a class='svcbtn' href="#" target="_blank"><i class="fas fa-code"></i><br>Presencia Web</a>
+								</div>
+							</div>
+						</div> 
+					</div>
+
+            </section>
+
+<!--=============================================================================================================-->
+
+			<footer id="footer-section"> <!-- Footer Section -->
+
+				<div class="footer-main">
+					<div class="container">
+						<div class="row">
+					    	<nav class="footer-nav">
+						    	<ul class="nav-list cl-effect-5 wow fadeInDown" id="footer-menu">
+									<li><a href="#"><span data-hover="INICIO">Inicio</span></a></li>
+									<li><a href="#about"><span data-hover="NOSOTROS">Nosotros</span></a></li>
+									<li><a href="#services"><span data-hover="SERVICIOS">Servicios</span></a></li>
+									<!-- logo -->
+									 <li class="logo"><a href="index.html"><img src="images/logo.png" alt=""/></a></li>
+									<!-- logo -->
+									<li><a href="#gallery"><span data-hover="PORTFOLIO">Portfolio</span></a></li>
+									<li><a href='http://dbstudio.ecwid.com/' target="_blank"><span data-hover="TIENDA">Tienda</span></a></li>
+									<li><a href="#contact"><span data-hover="CONTACTO">Contacto</span></a></li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				
+					<div class="footer text-center">
+						<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+						<p class="copyright wow fadeInUp">&copy; 2019 dbStudio. All Right Reserved.</p>
+	  				</div>
+	  			</div>	
+			</footer>
+			
+<!--=============================================================================================================-->
+			
+			<script type="text/javascript">
+						$(document).ready(function() {
+							/*
+							var defaults = {
+					  			containerID: 'toTop', // fading element id
+								containerHoverID: 'toTopHover', // fading element hover id
+								scrollSpeed: 1200,
+								easingType: 'linear' 
+					 		};
+							*/
+							
+							$().UItoTop({ easingType: 'easeOutQuart' });
+							
+						});
+			</script>
+			<script src="js/main.js"></script>
+		</body>
+</html>		

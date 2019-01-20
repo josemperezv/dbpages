@@ -1,0 +1,75 @@
+/*  -- General Styling --*/
+
+body{ background:#000; font:18px Helvetica, sans-serif; color: #ccc;}
+p{ margin-bottom:10px; text-align: justify;}
+a{ text-decoration:none; color:#f00;}
+ul{	padding:0px; margin:0px;}
+li{	padding:0px; margin:0px; list-style:none;}
+strong{	font-weight:bold;}
+h1{	color:#ccc; font-size:60px;	font-weight:bold; letter-spacing:-4px; margin:-2px 0 35px; padding-top:15px; text-indent:0; text-transform:uppercase; text-align: center;}
+h2{	border-top:3px solid #eee;	border-bottom:3px solid #eee; font-size:18px; font-weight:bold; letter-spacing: -1px; line-height:20px; margin-bottom:20px;	padding:15px 0;}
+hr{	border:2px solid #eee; margin-bottom:20px;}
+
+/*  -- Wrapper Section --*/
+
+#wrapper { margin: 0 auto;	width: 960px; padding-top: 20px;}
+
+/*  ---- Header Section -----*/
+
+#header{ width: 100%; height: 100%;}
+
+/*  ---- Navigation Bar Section -----*/
+
+#nav{ float:left; width: 169px;	text-align: right; height: 60%;}
+#nav ul { padding-top: 5px;}
+#nav li#navigation ul{ font-size:30px; letter-spacing:-2px; line-height:38px; list-style-image:none; list-style-position:outside; list-style-type: none; text-transform:uppercase;}
+#nav li#navigation h2{ display:none;}
+#nav img{ text-align: right; max-width: 80%}
+#nav ul li a{ color:#ccc; background:none; text-decoration: none;}
+#nav ul li a:hover{	color:#333;	text-decoration: none; background: #ccc;}
+#nav ul li.selected a{ color:#333; text-decoration: none; background: #ddd;}
+
+/*---------  Content section -----------------*/
+
+#content{ float:left; width: 691px;	margin-left: 30px; height: 60%;}
+#post h2{ font-size:18px; font-weight:bold; line-height:20px; width:330px; text-align: center;}
+#post p{ font-size:14px; line-height:20px;}
+#post img{ border:none; float:right; margin:-80px 0px 0px 14px; max-width: 50%; height: auto;}
+
+/*---------  Footer Section -----------------*/
+
+#footer{ float:left; width:100%; margin-top:10px; margin-bottom:20px; font-size:10px;}
+#social_media{ text-align:right; float: left; color:#444; font-family: Helvetica, sans-serif; font-size:16px; vertical-align:middle;}
+	.social-link { text-decoration:none; }
+	.social-link li{ display: inline; list-style:none; letter-spacing: 30px;}
+	.social-link li a{ color:#ccc; text-decoration:none;}
+	.instagram a:hover {color: #c32aa3;}
+	.youtube a:hover {color: #ff0000;}
+	.facebook a:hover {color: #3b5998;}
+	.twitter a:hover { color: #1da1f2;}
+	.soundcloud a:hover {color: #ff7700;}
+#footer_nav{ float:right;}
+#footer_nav li{ display:inline;}
+#footer_nav li a{ color:#515151; padding-right:5px;	border-right:1px solid #292929;}
+#footer_nav li a:hover{	color:#F00;}
+#copyright{	float:right; text-align: right;}
+
+/*---------  Responsive Coding -----------------*/
+
+@media screen and (max-width: 970px) {
+	#wrapper {width: 100%;}
+	#music {float: right; margin-right: 10%;}
+    #nav { float: none; text-align: left; margin-left: 10%;}
+    #navigation ul li {display: inline;}
+    #content { float: none; width: 80%; margin: 0 auto; }  
+    #content h1 {text-align: center; }
+    #post h2 {width: 100%;}
+    img {float:none; margin: 0 auto; width: 100%;}
+    #footer {text-align: center; margin: 0 auto;}
+    #social_media {font-size: 15px;}
+}
+
+@media screen and (max-width: 600px) {
+	#content h1 { font-size: 2.3em; font-weight: normal; letter-spacing:-2px; line-height:40px;}
+	#social_media {font-size: 10px;}
+}

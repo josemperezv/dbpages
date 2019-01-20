@@ -9,21 +9,21 @@
 			<!-- Title -->
 			<title>dbStudio</title>
 			
-			<link href="images/favicon.png" rel='icon' type='image/x-icon'/>
-
 			<!-- Bootstrap & Font-Awesome CSS -->
 			<link rel="stylesheet" href="css/bootstrap.min.css" type='text/css'>
 			<link rel="stylesheet" href="css/font-awesome.min.css" type='text/css'>
 			
 			<!-- Custom CSS -->
 			<link rel="stylesheet" href="css/style.css" type='text/css'>
-			<link rel="stylesheet" href="css/prettyPhoto.css" type='text/css'>
 			<link rel="stylesheet" href="css/responsive.css" type='text/css'>
 			
 			<!-- Animation CSS -->
 			<link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
 			
+		    <link href="images/favicon.png" rel='icon' type='image/x-icon'/>
+			
 			<!-- Google Webfont -->
+			<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 			<link href='http://fonts.googleapis.com/css?family=Noticia+Text:400,700' rel="stylesheet" type='text/css'>
 			
 			<!-- js files & script -->
@@ -41,20 +41,34 @@
 			<script type="text/javascript" src="js/easing.js"></script>
 			<script type="text/javascript" src="js/modernizr.js"></script>
 			<script type="text/javascript" src="js/retina.js"></script>
-			<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
 			<script type="text/javascript" src="js/wow.min.js"></script>
 			<script>
 				 new WOW().init();
 			</script>
+			<script type="text/javascript">
+				// makes sure the whole site is loaded
+				jQuery(window).load(function() {
+				// will fade out the whole DIV that covers the website.
+				jQuery("#preloader").delay(2000).fadeOut("slow");
+				});
+			</script>
 			
 		</head>
+
+<!--=============================================================================================================-->
+
 		<body>
-		
-            <header id="header"> <!-- Header Part -->
+			<div id="preloader">
+			  <div class="loader">
+			    <svg class="circular" viewBox="25 25 50 50">
+			      <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"/>
+			    </svg>
+			  </div>
+			</div>
 			
-			<!-- this is dummy heading for W3-Validation approval you can remove it if you want -->
-			<h2 class="w3-validation">For W3 Validation</h2>
-			<!-- this is dummy heading for W3-Validation approval you can remove it if you want -->
+			<div class="reading-progress"></div>
+
+            <header id="header"> <!-- Header Part -->
 			
 					<div class="header">
 						<div class="container">
@@ -67,16 +81,16 @@
 									</div>
 									<nav class="nav">
 										<a id="menu-toggle" class="anchor-link" href="#"><img src="images/nav.png" alt="" /></a>
-										<ul class="nav-list" id="menu">
-											<li><a href="#">Inicio</a></li>
-											<li><a href="#about" class="scroll">Nosotros</a></li>
-											<li><a href="#services" class="scroll">Servicios</a></li>
+										<ul class="nav-list cl-effect-5" id="menu">
+											<li><a href="#"><span data-hover="INICIO">Inicio</span></a></li>
+											<li><a href="#about"><span data-hover="NOSOTROS">Nosotros</span></a></li>
+											<li><a href="#services"><span data-hover="SERVICIOS">Servicios</span></a></li>
 											<!-- logo -->
 											 <li class="logo"><a href="index.html"><img src="images/logo.png" alt=""/></a></li>
 											<!-- logo -->
-											<li><a href="#releases" class="scroll">Lanzamientos</a></li>
-											<li><a href="#store" class="scroll">Tienda</a></li>
-											<li><a href="#contact" class="scroll">Contacto</a></li>
+											<li><a href="#gallery"><span data-hover="PORTFOLIO">Portfolio</span></a></li>
+											<li><a href='http://dbstudio.ecwid.com/' target="_blank"><span data-hover="TIENDA">Tienda</span></a></li>
+											<li><a href="#contact"><span data-hover="CONTACTO">Contacto</span></a></li>
 										</ul>
 									</nav>
 									<script type="text/javascript">
@@ -94,12 +108,10 @@
 						</div>
 					</div>
 			</header>
+
+<!--=============================================================================================================-->
 			
             <section id="about-section"> <!-- About Section -->
-			
-			<!-- this is dummy heading for W3-Validation approval you can remove it if you want -->
-			<h2 class="w3-validation">For W3 Validation</h2>
-			<!-- this is dummy heading for W3-Validation approval you can remove it if you want -->
 			
 					<div class="container-fluid">  
 						<div class="row" id="about">
@@ -109,9 +121,8 @@
 							<div class="col-md-6 about_right wow fadeInUp" data-wow-delay="0.0s">
 								  <div class="about_text">
 										<img src="images/tatto.png" class="img-responsive" alt=""/>
-										<h3></h3>
-										<p>dbStudio es un proveedor venezolano de servicios para artistas independientes. Estámos dedicados al desarrollo de proyectos musicales, producción, mezcla y masterización digital, servicios de diseño, presencia online y distribución y promoción digital en todo el mundo.</p>
-										<p>dbStudio ofrece una alternativa efectiva y a bajo costo, con un producto final que estamos seguros te gustará.</p>
+										<h3>dbStudio es un proveedor venezolano de servicios para artistas independientes. Estámos dedicados al desarrollo de proyectos musicales y audiovisuales, incluyendo producción musical, mezcla y masterización digital, servicios de diseño, producción audiovisual, distribución y promoción digital en todo el mundo y presencia online.</h3>
+										<h3>dbStudio ofrece una alternativa efectiva y a bajo costo, con un producto final que estamos seguros te gustará.</h3>
 								  </div>
 							</div>
 						</div> 
@@ -119,510 +130,149 @@
 					</div>  
             </section>
 
-            <section id="gallery-one-image-section"> <!-- Services Part -->
-			
-			<!-- this is dummy heading for W3-Validation approval you can remove it if you want -->
-			<h2 class="w3-validation">For W3 Validation</h2>
-			<!-- this is dummy heading for W3-Validation approval you can remove it if you want -->
+<!--=============================================================================================================-->
+
+            <section id="gallery-one-image-section"> <!-- About Gallery Part -->
 			
 					<div class="container-fluid">
 					    <div class="row" id="services">
 						    <div class="gallery-one-top wow fadeInLeft" data-wow-delay="0.0s">
 								<ul class="about_gallery">
+									
 									<li>
-										<div class="b-link-stripe b-animate-go thickbox"> <!-- Services Title -->
-												<img src="images/gallery-one-img1.jpg" class="gallery-one-image img-responsive" alt=""/> 
-												<div class="b-wrapper">
-														<div class="b-animate b-from-left b-delay03 ">
-															<a href="images/about-gallery/2.jpg" rel="prettyPhoto[pp_gal]">
-																<button class="zooming about-zooming md-trigger">
-																		<img src="images/zoom.png" alt=""/>
-																</button>
-															</a>
-															<ul class="popup_links popup-links-button">
-																<li><button><i class="link"></i></button></li>
-																<li><button><i class="info"></i></button></li>
-																<li><button><i class="like"></i></button></li>
-															</ul>
-														</div>
+										<div class="gal1"> <!-- Gallery one image no : 1 -->
+												<figure><img src="images/gallery-one-img1.jpg" class="svcimage"></figure>
+												<div class="svcbutton">
+													<a class='svcbtn' href="servicios.html"><i class='fas fa-music'></i><br>Producción Musical</a>
 												</div>
 										</div>
 									</li>
+									
 									<li>
-										<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery one image no : 2 -->
-												<img src="images/gallery-one-img2.jpg" class="gallery-one-image img-responsive" alt=""/>
-												<div class="b-wrapper">
-														<div class="b-animate b-from-left b-delay03 ">
-															<a href="images/about-gallery/2.jpg" rel="prettyPhoto[pp_gal]">
-																<button class="zooming about-zooming md-trigger">
-																		<img src="images/zoom.png" alt=""/>
-																</button>
-															</a>
-															<ul class="popup_links popup-links-button">
-																<li><button><i class="link"></i></button></li>
-																<li><button><i class="info"></i></button></li>
-																<li><button><i class="like"></i></button></li>
-															</ul>
-														</div>
-												</div>
-										</div>
-									</li>
-									<li>
-										<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery one image no : 3 -->
-												<img src="images/gallery-one-img3.jpg" class="gallery-one-image img-responsive" alt=""/> 
-												<div class="b-wrapper">
-														<div class="b-animate b-from-left b-delay03 ">
-														    <a href="images/about-gallery/3.jpg" rel="prettyPhoto[pp_gal]">
-																<button class="zooming about-zooming md-trigger">
-																		<img src="images/zoom.png" alt=""/>
-																</button>
-															</a>
-															<ul class="popup_links popup-links-button">
-																<li><button><i class="link"></i></button></li>
-																<li><button><i class="info"></i></button></li>
-																<li><button><i class="like"></i></button></li>
-															</ul>
-														</div>
-												</div>
-										</div>
-									</li>
-									<li>
-										<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery one image no : 4 -->
-												<img src="images/gallery-one-img4.jpg" class="gallery-one-image img-responsive" alt=""/>
-												<div class="b-wrapper">
-														<div class="b-animate b-from-left b-delay03 ">
-															<a href="images/about-gallery/4.jpg" rel="prettyPhoto[pp_gal]">
-																<button class="zooming about-zooming md-trigger">
-																		<img src="images/zoom.png" alt=""/>
-																</button>
-															</a>
-															<ul class="popup_links popup-links-button">
-																<li><button><i class="link"></i></button></li>
-																<li><button><i class="info"></i></button></li>
-																<li><button><i class="like"></i></button></li>
-															</ul>
-														</div>
+										<div class="gal1"> <!-- Gallery one image no : 2 -->
+												<figure><img src="images/gallery-one-img2.jpg" class="svcimage"></figure>
+												<div class="svcbutton">
+													<a class='svcbtn' href="servicios.html"><i class="fas fa-sliders-h"></i><br>Mezcla y Master</a>
 												</div>
 										</div>
 									</li>
 
-								    <div class="services-title">
-									    <a href="#" class="button-one services_btn button-type-one button-box">Servicios</a>
-								    </div>
-
-<!--									<li>
-										<div class="b-link-stripe b-animate-go thickbox"> 
-												<img src="images/gallery-one-img5.jpg" class="gallery-one-image img-responsive" alt=""/>
-												<div class="b-wrapper">
-														<div class="b-animate b-from-left b-delay03 ">
-															<a href="images/about-gallery/5.jpg" rel="prettyPhoto[pp_gal]">
-																<button class="zooming md-trigger">
-																		<img src="images/zoom.png" alt=""/>
-																</button>
-															</a>
-															<ul class="popup_links popup-links-button">
-																<li><button><i class="link"></i></button></li>
-																<li><button><i class="info"></i></button></li>
-																<li><button><i class="like"></i></button></li>
-															</ul>
-														</div>
+									<li>
+										<div class="gal1"> <!-- Gallery one image no : 3 -->
+												<figure><img src="images/gallery-one-img3.jpg" class="svcimage"></figure>
+												<div class="svcbutton">
+													<a class='svcbtn' href="servicios.html"><i class="fas fa-paint-brush"></i><br>Diseño Gráfico</a>
 												</div>
 										</div>
 									</li>
-									<li>
-										<div class="b-link-stripe b-animate-go thickbox"> 
-												<img src="images/gallery-one-img6.jpg" class="gallery-one-image img-responsive" alt=""/> 
-												<div class="b-wrapper">
-														<div class="b-animate b-from-left b-delay03 ">
-															<a href="images/about-gallery/6.jpg" rel="prettyPhoto[pp_gal]">
-																<button class="zooming about-zooming md-trigger">
-																		<img src="images/zoom.png" alt=""/>
-																</button>
-															</a>
-															<ul class="popup_links popup-links-button">
-																<li><button><i class="link"></i></button></li>
-																<li><button><i class="info"></i></button></li>
-																<li><button><i class="like"></i></button></li>
-															</ul>
-														</div>
-												</div>
-										</div>
-									</li> -->
-
 
 								</ul>
 								<div class="clearfix"></div>
 							</div>
 						</div>
+
 						<div class="row">
 							<div class="gallery-one-bottom">
 								<ul class="about_gallery wow fadeInRight" data-wow-delay="0.3s">
+
 									<li>
-										<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery one image no : 7 -->
-												<img src="images/gallery-one-img7.jpg" class="gallery-one-image img-responsive" alt=""/>
-												<div class="b-wrapper">
-														<div class="b-animate b-from-left b-delay03 ">
-														<a href="images/about-gallery/7.jpg" rel="prettyPhoto[pp_gal]">
-															<button class="zooming about-zooming md-trigger">
-																	<img src="images/zoom.png" alt=""/>
-															</button>
-														</a>
-															<ul class="popup_links popup-links-button">
-																<li><button><i class="link"></i></button></li>
-																<li><button><i class="info"></i></button></li>
-																<li><button><i class="like"></i></button></li>
-															</ul>
-														</div>
+										<div class="gal1"> <!-- Gallery one image no : 4 -->
+												<figure><img src="images/gallery-one-img4.jpg" class="svcimage"></figure>
+												<div class="svcbutton">
+													<a class='svcbtn' href="servicios.html"><i class="fas fa-video"></i><br>Producción Audiovisual</a>
 												</div>
 										</div>
 									</li>
+
 									<li>
-										<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery one image no : 8 -->
-												<img src="images/gallery-one-img8.jpg" class="gallery-one-image img-responsive" alt=""/>
-												<div class="b-wrapper">
-														<div class="b-animate b-from-left b-delay03 ">
-															<a href="images/about-gallery/8.jpg" rel="prettyPhoto[pp_gal]">
-																<button class="zooming about-zooming md-trigger">
-																		<img src="images/zoom.png" alt=""/>
-																</button>
-															</a>
-															<ul class="popup_links popup-links-button">
-																<li><button><i class="link"></i></button></li>
-																<li><button><i class="info"></i></button></li>
-																<li><button><i class="like"></i></button></li>
-															</ul>
-														</div>
+										<div class="gal1"> <!-- Gallery one image no : 5 -->
+												<figure><img src="images/gallery-one-img5.jpg" class="svcimage"></figure>
+												<div class="svcbutton">
+													<a class='svcbtn' href="servicios.html"><i class="fas fa-cloud-upload-alt"></i><br>Distribución</a>
 												</div>
 										</div>
 									</li>
+
 									<li>
-										<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery one image no : 9 -->
-												<img src="images/gallery-one-img9.jpg" class="gallery-one-image img-responsive" alt=""/>
-												<div class="b-wrapper">
-														<div class="b-animate b-from-left b-delay03 ">
-															<a href="images/about-gallery/9.jpg" rel="prettyPhoto[pp_gal]">
-																<button class="zooming about-zooming md-trigger">
-																		<img src="images/zoom.png" alt=""/>
-																</button>
-															</a>
-															<ul class="popup_links popup-links-button">
-																<li><button><i class="link"></i></button></li>
-																<li><button><i class="info"></i></button></li>
-																<li><button><i class="like"></i></button></li>
-															</ul>
-														</div>
+										<div class="gal1"> <!-- Gallery one image no : 6 -->
+												<figure><img src="images/gallery-one-img6.jpg" class="svcimage"></figure>
+												<div class="svcbutton">
+													<a class='svcbtn' href="servicios.html"><i class="fas fa-code"></i><br>Presencia Web</a>
 												</div>
 										</div>
 									</li>
-									<li>
-										<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery one image no : 10 -->
-												<img src="images/gallery-one-img10.jpg" class="gallery-one-image img-responsive" alt=""/>
-												<div class="b-wrapper">
-														<div class="b-animate b-from-left b-delay03 ">
-															<a href="images/about-gallery/10.jpg" rel="prettyPhoto[pp_gal]">
-																<button class="zooming about-zooming md-trigger">
-																		<img src="images/zoom.png" alt=""/>
-																</button>
-															</a>
-															<ul class="popup_links popup-links-button">
-																<li><button><i class="link"></i></button></li>
-																<li><button><i class="info"></i></button></li>
-																<li><button><i class="like"></i></button></li>
-															</ul>
-														</div>
-												</div>
-										</div>
-									</li>
-									<li>
-										<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery one image no : 11 -->
-												<img src="images/gallery-one-img11.jpg" class="gallery-one-image img-responsive" alt=""/>
-												<div class="b-wrapper">
-														<div class="b-animate b-from-left b-delay03 ">
-														<a href="images/about-gallery/11.jpg" rel="prettyPhoto[pp_gal]">
-															<button class="zooming about-zooming md-trigger">
-																	<img src="images/zoom.png" alt=""/>
-															</button>
-														</a>
-															<ul class="popup_links popup-links-button">
-																<li><button><i class="link"></i></button></li>
-																<li><button><i class="info"></i></button></li>
-																<li><button><i class="like"></i></button></li>
-															</ul>
-														</div>
-												</div>
-										</div>
-									</li>
-									<li>
-										<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery one image no : 12 -->
-												<img src="images/gallery-one-img12.jpg" class="gallery-one-image img-responsive" alt=""/>
-												<div class="b-wrapper">
-														<div class="b-animate b-from-left b-delay03 ">
-															<a href="images/about-gallery/12.jpg" rel="prettyPhoto[pp_gal]">
-																<button class="zooming about-zooming md-trigger">
-																		<img src="images/zoom.png" alt=""/>
-																</button>
-															</a>
-															<ul class="popup_links popup-links-button">
-																<li><button><i class="link"></i></button></li>
-																<li><button><i class="info"></i></button></li>
-																<li><button><i class="like"></i></button></li>
-															</ul>
-														</div>
-												</div>
-										</div>
-									</li>
+
 								</ul>
 								<div class="clearfix"></div>
 							</div>
 						</div>	
 					</div>
             </section>
+
+<!--=============================================================================================================-->
 			
-			<section id="testimonial-section"> <!-- Courses Section -->
+			<!--<section id="testimonial-section"> Testimonial Section 
 			
-			<!-- this is dummy heading for W3-Validation approval you can remove it if you want -->
-			<h2 class="w3-validation">For W3 Validation</h2>
-			<!-- this is dummy heading for W3-Validation approval you can remove it if you want -->
-			
-					 <div class="testimonial wow bounceIn" data-wow-delay="0.0s" id="">
+					 <div class="testimonial wow bounceIn" data-wow-delay="0.0s" id="faq">
 							<div class="container">
 									<div class="row">
 									    <div class="test_wrap">
-											<p>Conoce nuestros cursos</p>
+											<p><span class="quotes"></span>Aliquam ac justo interdum, elementum ligula et, condimentum orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit.<span class="quotes-down"></span></p>
+											<h4>- John Doe -</h4>
+											<div class="clearfix"> </div>
 									    </div>
 									</div>
 							</div>
                      </div>
-			</section>
-			
-			<section id="gallery-two-image-section"> <!-- Releases Section -->
-			
-			<!-- this is dummy heading for W3-Validation approval you can remove it if you want -->
-			<h2 class="w3-validation">For W3 Validation</h2>
-			<!-- this is dummy heading for W3-Validation approval you can remove it if you want -->
-			
-				<div class="container-fluidgallery wow fadeInDown" data-wow-delay="0.0s" id="releases">
-					        <div class="row">
-								    <div class="releases-title">
-									    <a href="#" class="button-one releases_btn button-type-one button-box">Lanzamientos</a>
-								    </div>
-									<div class="gallery-two-row-one">
-											<ul class="gallery-grid-one gallery-grid-box">
-												<li>
-													<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery image no : 1 -->
-															<img src="images/gallery-two-img1.jpg" class="gallery-two-image img-responsive" alt=""/>
-														<div class="b-wrapper">
-																<div class="b-animate b-from-left b-delay03 ">
-																	<a href="images/photo-gallery/image-1.jpg" rel="prettyPhoto[pp_gal]">
-																		<button class="zooming md-trigger">
-																			<img src="images/zoom.png" alt=""/>
-																		</button>
-																	</a>
-																	<ul class="popup_links gallery-two-popup-links">
-																		<li><button><i class="link"></i></button></li>
-																		<li><button><i class="info"></i></button></li>
-																		<li><button><i class="like"></i></button></li>
-																	</ul>
-																</div>
-														</div>
-													</div>
-												</li>
-												<li>
-													<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery image no : 2 -->
-															<img src="images/gallery-two-img2.jpg" class="gallery-two-image img-responsive" alt=""/>
-														<div class="b-wrapper">
-																<div class="b-animate b-from-left b-delay03 ">
-																	<a href="images/photo-gallery/image-2.jpg" rel="prettyPhoto[pp_gal]">
-																		<button class="zooming md-trigger">
-																				<img src="images/zoom.png" alt=""/>
-																		</button>
-																	</a>
-																	<ul class="popup_links gallery-two-popup-links">
-																		<li><button><i class="link"></i></button></li>
-																		<li><button><i class="info"></i></button></li>
-																		<li><button><i class="like"></i></button></li>
-																	</ul>
-																</div>
-														</div>
-													</div>
-												</li>
-												<li>
-													<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery image no : 3 -->
-															<img src="images/gallery-two-img3.jpg" class="gallery-two-image img-responsive" alt=""/>
-														<div class="b-wrapper">
-																<div class="b-animate b-from-left b-delay03 ">
-																	<a href="images/photo-gallery/image-3.jpg" rel="prettyPhoto[pp_gal]">
-																		<button class="zooming md-trigger">
-																				<img src="images/zoom.png" alt=""/>
-																		</button>
-																	</a>
-																	<ul class="popup_links gallery-two-popup-links">
-																		<li><button><i class="link"></i></button></li>
-																		<li><button><i class="info"></i></button></li>
-																		<li><button><i class="like"></i></button></li>
-																	</ul>
-																</div>
-														</div>
-													</div>
-												</li>											
-												
-											</ul>
-											<div class="clearfix"></div>
-									</div>
-							</div>
-							<div class="row">
-							    <div class="col-md-12">
-								    <div class="gallery-two-row-two wow fadeInLeft">
-									    <ul class="gallery-grid-two gallery-grid-box">
-										    <li>
-												<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery image no : 4 -->
-													    <img src="images/gallery-two-img4.jpg" class="gallery-two-image img-responsive" alt=""/>
-														<div class="b-wrapper">
-															<div class="b-animate b-from-left b-delay03 ">
-																	<a href="images/photo-gallery/image-4.jpg" rel="prettyPhoto[pp_gal]">
-																		<button class="zooming md-trigger">
-																				<img src="images/zoom.png" alt=""/>
-																		</button>
-																	</a>
-																<ul class="popup_links gallery-two-popup-links">
-																	<li><button><i class="link"></i></button></li>
-															        <li><button><i class="info"></i></button></li>
-															        <li><button><i class="like"></i></button></li>
-																</ul>
-															</div>
-														</div>
-												</div>
-										    </li>
-											<li>
-												<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery image no : 5 -->
-													    <img src="images/gallery-two-img5.jpg" class="gallery-two-image img-responsive" alt=""/>
-														<div class="b-wrapper">
-															<div class="b-animate b-from-left b-delay03 ">
-																	<a href="images/photo-gallery/image-5.jpg" rel="prettyPhoto[pp_gal]">
-																		<button class="zooming md-trigger">
-																				<img src="images/zoom.png" alt=""/>
-																		</button>
-																	</a>
-																<ul class="popup_links gallery-two-popup-links">
-																	<li><button><i class="link"></i></button></li>
-															        <li><button><i class="info"></i></button></li>
-															        <li><button><i class="like"></i></button></li>
-																</ul>
-															</div>
-														</div>
-												</div>
-										    </li>
-											<li>
-												<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery image no : 6 -->
-													    <img src="images/gallery-two-img6.jpg" class="gallery-two-image img-responsive" alt=""/>
-														<div class="b-wrapper">
-															<div class="b-animate b-from-left b-delay03 ">
-																	<a href="images/photo-gallery/image-6.jpg" rel="prettyPhoto[pp_gal]">
-																		<button class="zooming md-trigger">
-																				<img src="images/zoom.png" alt=""/>
-																		</button>
-																	</a>
-																<ul class="popup_links gallery-two-popup-links">
-																	<li><button><i class="link"></i></button></li>
-															        <li><button><i class="info"></i></button></li>
-															        <li><button><i class="like"></i></button></li>
-																</ul>
-															</div>
-														</div>
-												</div>
-										    </li>
-											<li>
-												<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery image no : 7 -->
-													    <img src="images/gallery-two-img7.jpg" class="gallery-two-image img-responsive" alt=""/>
-														<div class="b-wrapper">
-															<div class="b-animate b-from-left b-delay03 ">
-																<a href="images/photo-gallery/image-7.jpg" rel="prettyPhoto[pp_gal]">
-																	<button class="zooming md-trigger">
-																			<img src="images/zoom.png" alt=""/>
-																	</button>
-																</a>
-																<ul class="popup_links gallery-two-popup-links">
-																	<li><button><i class="link"></i></button></li>
-															        <li><button><i class="info"></i></button></li>
-															        <li><button><i class="like"></i></button></li>
-																</ul>
-															</div>
-														</div>
-												</div>
-										    </li>
-											<li>
-												<div class="b-link-stripe b-animate-go thickbox"> <!-- Gallery image no : 8 -->
-													    <img src="images/gallery-two-img8.jpg" class="gallery-two-image img-responsive" alt=""/>
-														<div class="b-wrapper">
-															<div class="b-animate b-from-left b-delay03 ">
-																<a href="images/photo-gallery/image-8.jpg" rel="prettyPhoto[pp_gal]">
-																	<button class="zooming md-trigger">
-																			<img src="images/zoom.png" alt=""/>
-																	</button>
-																</a>
-																<ul class="popup_links gallery-two-popup-links">
-																	<li><button><i class="link"></i></button></li>
-															        <li><button><i class="info"></i></button></li>
-															        <li><button><i class="like"></i></button></li>
-																</ul>
-															</div>
-														</div>
-												</div>
-										    </li>
-											
-										</ul>
-										<div class="clearfix"></div>
-									</div>
-								</div>
-							</div>
+			</section> -->
 
-							<div class="md-overlay"></div><!-- the overlay element -->
-		
-				</div>
-			</section>
-			
-			<section id="twitter-section"> <!-- Store Section -->
-			
-			<!-- this is dummy heading for W3-Validation approval you can remove it if you want -->
-			<h2 class="w3-validation">For W3 Validation</h2>
-			<!-- this is dummy heading for W3-Validation approval you can remove it if you want -->
-			
-			        <div class="twitter-div wow bounceInUp"  data-wow-delay="0.0s" id="store">
-						<div class="container">
-							<div class="row">
-								<p>Visita nuestra tienda</p>
-							</div>
-						</div>
-                    </div>
+<!--=============================================================================================================-->
+
+			<section class="promo-section" id="connect">
+			    <div class="container">
+			        <div class="row">
+			            <div class="col-lg-6 banner-connect">
+			                <h2>Conecta con dbStudio</h2>
+			            </div>
+			            <div class="col-lg-6 social-connect">
+			              <a href='https://www.instagram.com/dbstudiove/' target="_blank"><i class='fab fa-instagram'></i></a>
+			              <a href='https://www.facebook.com/dbstudiove/' target="_blank"><i class='fab fa-facebook-f'></i></a>
+			              <a href='https://twitter.com/dbstudiove' target="_blank"><i class='fab fa-twitter'></i></a>
+			            </div>
+			        </div>
+			    </div>
 			</section>
 
+<!--=============================================================================================================-->
+			
 			<section id="team-section"> <!-- Team Section -->
-			
-			<!-- this is dummy heading for W3-Validation approval you can remove it if you want -->
-			<h2 class="w3-validation">For W3 Validation</h2>
-			<!-- this is dummy heading for W3-Validation approval you can remove it if you want -->
 			
 				<div class="container-fluid">
 					<div class="row">
 					    <div class="team">
 							<div class='team_div'>
-									<div class="col-md-4 team-grid-3 wow fadeInRight" data-wow-delay="0.3s">
-											<h3>Jose M. Perez</h3> <!-- Team Member One -->
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc risus eros, ultricies quis erat sit amet, elementum vulputate lorem. Sed at lacinia lectus, quis blandit libero.</p>
-											<p>Quisque ac malesuada lectus. Proin gravida feugiat commodo. Phasellus fermentum sem ut felis vehicula aliquet. Donec rhoncus, mi et euismod dictum, purus lorem vehicula justo, a iaculis mi nulla et risus.</p>
-											 <ul class="social">
-												<li><a href=""><i class="fb"> </i> </a></li>
-												<li><a href=""><i class="tw"> </i> </a></li>
-												<li><a href=""><i class="tumb"> </i> </a></li>
-												<li><a href=""><i class="linked"> </i> </a></li>
-												<li><a href=""><i class="pinterest"> </i> </a></li>
-												<li><a href=""><i class="google"> </i> </a></li>
-											</ul> 
-									</div>
-							        <div class="col-md-4 team-grid-2 wow fadeInUp"  data-wow-delay="0.0s"> </div>
 								    <div class="col-md-4 team-grid-1 wow fadeInLeft" data-wow-delay="0.3s">
 									    <a href="#" class="button-one team_btn button-type-one button-box">Team</a>
 								    </div>
+							        <div class="col-md-4 teampic wow fadeInUp"  data-wow-delay="0.0s">
+							        	<div>
+							        		<figure><img src="images/team-member-1.jpg"></figure>
+							        	</div>
+							        </div>
+									<div class="col-md-4 team-grid-3 wow fadeInRight" data-wow-delay="0.3s">
+											<a href="jmpv.html"><h3>José M. Pérez</h3></a> <!-- Team Member One -->
+											<h4 class="oranged">Productor / Técnico / Director</h4>
+											<!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc risus eros, ultricies quis erat sit amet, elementum vulputate lorem. Sed at lacinia lectus, quis blandit libero.</p><br>
+											<p>Quisque ac malesuada lectus. Proin gravida feugiat commodo. Phasellus fermentum sem ut felis vehicula aliquet. Donec rhoncus, mi et euismod dictum, purus lorem vehicula justo, a iaculis mi nulla et risus.</p> -->
+										        <div class="social-linkt">
+										          <a class='instagram' href='https://www.instagram.com/josemperezv/' target="_blank"><i class="fab fa-instagram"></i></a>
+										          <a class='youtube' href='http://www.youtube.com/c/JoseMPerez' target="_blank"><i class="fab fa-youtube"></i></i></a>
+										          <a class='facebook' href='https://www.facebook.com/josemperezv' target="_blank"><i class="fab fa-facebook-f"></i></a>
+										          <a class='twitter' href='https://twitter.com/josemperezv' target="_blank"><i class="fab fa-twitter"></i></a>
+										          <a class='soundcloud' href='https://soundcloud.com/josemperezv' target="_blank"><i class="fab fa-soundcloud"></i></a>
+										        </div>
+								        <label class="arrow-icon1  arrow-icon1-r"> </label>
+									</div>
 						            <div class="clearfix"> </div>
 						    </div>
 						</div>
@@ -630,20 +280,23 @@
 					<div class="row">
 					    <div class="team">
 							<div class='team_div'>
-							        <div class="col-md-4 team-grid-4 team_grid3 wow fadeInRight" data-wow-delay="0.3s">
+							        <div class="col-md-4 teampic wow fadeInUp"  data-wow-delay="0.0s">
+							        	<div>
+							        		<figure><img src="images/team-member-2.jpg"></figure>
+							        	</div>
 							        </div>
 								    <div class="col-md-4 team-grid-5 team_grid1 wow fadeInLeft" data-wow-delay="0.3s">
-									    <h3>Alejandro Perez</h3> <!-- Team Member Two -->
-									    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc risus eros, ultricies quis erat sit amet, elementum vulputate lorem. Sed at lacinia lectus, quis blandit libero.</p>
-										<p>Quisque ac malesuada lectus. Proin gravida feugiat commodo. Phasellus fermentum sem ut felis vehicula aliquet. Donec rhoncus, mi et euismod dictum, purus lorem vehicula justo, a iaculis mi nulla et risus.</p>
-										<ul class="social">
-											<li><a href=""> <i class="fb"> </i> </a></li>
-											<li><a href=""><i class="tw"> </i> </a></li>
-											<li><a href=""><i class="tumb"> </i> </a></li>
-											<li><a href=""><i class="linked"> </i> </a></li>
-											<li><a href=""><i class="pinterest"> </i> </a></li>
-											<li><a href=""><i class="google"> </i> </a></li>
-										</ul> 
+									    <a href="japv.html"><h3>Alejandro Pérez</h3></a> <!-- Team Member Two -->
+									    <h4 class="oranged">Productor / Técnico</h4>
+									    <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc risus eros, ultricies quis erat sit amet, elementum vulputate lorem. Sed at lacinia lectus, quis blandit libero.</p><br>
+										<p>Quisque ac malesuada lectus. Proin gravida feugiat commodo. Phasellus fermentum sem ut felis vehicula aliquet. Donec rhoncus, mi et euismod dictum, purus lorem vehicula justo, a iaculis mi nulla et risus.</p> -->
+										        <div class="social-linkt">
+										          <a class='instagram' href='https://www.instagram.com/apxxiv/' target="_blank"><i class='fab fa-instagram'></i></a>
+										          <a class='youtube' href='https://www.youtube.com/channel/UCkhOhpRIZdt_1thD74hIPbg' target="_blank"><i class="fab fa-youtube"></i></i></a>
+										          <a class='facebook' href='https://www.facebook.com/iamap24' target="_blank"><i class='fab fa-facebook-f'></i></a>
+										          <a class='twitter' href='https://twitter.com/apxxiv' target="_blank"><i class='fab fa-twitter'></i></a>
+										          <a class='soundcloud' href='https://soundcloud.com/apxxiv' target="_blank"><i class='fab fa-soundcloud'></i></a>
+										        </div>
 									    <label class="arrow-icon1  arrow-icon1-r"> </label>
 								    </div>
 								    <div class="col-md-4 newsletter_grid team-grid-6 wow fadeInUp"  data-wow-delay="0.0s">
@@ -662,90 +315,226 @@
 					</div>
 				</div>
 			</section>
+
+<!--=============================================================================================================-->
+			
+			<!-- <section id="twitter-section"> Twitter Section
+			
+			        <div class="twitter-div wow bounceInUp"  data-wow-delay="0.0s" id="find">
+						<div class="container">
+							<div class="row">
+							    <i class="tw_icon"> </i>
+								<p>RT @collis: Trade growth ideas with other founders. Look for ways to cross promote. Small startups today may be big friends later. (9/10)  2 days ago</p>
+							</div>
+						</div>
+                    </div>
+			</section> -->
+
+<!--=============================================================================================================-->
+			
+			<section id="gallery-two-image-section"> <!-- Gallery Two Section -->
+			
+				<div class="container-fluidgallery wow fadeInDown" data-wow-delay="0.0s" id="gallery">
+					        <div class="row">
+								    <div class="gallery-title">
+									    <a href="#" class="button-one gallery_btn button-type-one button-box">Portfolio</a>
+								    </div>
+									<div class="gallery-two-row-one">
+											<ul class="gallery-grid-one gallery-grid-box">
+
+											    <li>
+													<div class="gal2"> <!-- Gallery image no : 1 -->
+														<img src="images/gallery-two-img1.jpg" class="ytimage">
+														<div class="ytbutton">
+															<a class='ytbtn' href='https://www.youtube.com/watch?v=uDrTOCVuOnE' target="_blank"><i class='fab fa-youtube'></i></a>
+														</div>
+													</div>
+											    </li>
+
+											    <li>
+													<div class="gal2"> <!-- Gallery image no : 2 -->
+														<img src="images/gallery-two-img2.jpg" class="ytimage">
+														<div class="ytbutton">
+															<a class='ytbtn' href='https://www.youtube.com/watch?v=Q_qNTRz9T50' target="_blank"><i class='fab fa-youtube'></i></a>
+														</div>
+													</div>
+											    </li>
+
+											    <li>
+													<div class="gal2"> <!-- Gallery image no : 3 -->
+														<img src="images/gallery-two-img3.jpg" class="ytimage">
+														<div class="ytbutton">
+															<a class='ytbtn' href='https://www.youtube.com/watch?v=Hu14k7z_YWI' target="_blank"><i class='fab fa-youtube'></i></a>
+														</div>
+													</div>
+											    </li>											    								
+												
+											</ul>
+											<div class="clearfix"></div>
+									</div>
+							</div>
+
+							<div class="row">
+							    <div class="col-md-12">
+								    <div class="gallery-two-row-two wow fadeInLeft">
+									    <ul class="gallery-grid-two gallery-grid-box">
+										    <li>
+												<div class="gal2"> <!-- Gallery image no : 4 -->
+													<img src="images/gallery-two-img4.jpg" class="ytimage">
+													<div class="ytbutton">
+														<a class='ytbtn' href='https://www.youtube.com/watch?v=wOUywJh9-lM' target="_blank"><i class='fab fa-youtube'></i></a>
+													</div>
+												</div>
+										    </li>
+
+										    <li>
+												<div class="gal2"> <!-- Gallery image no : 5 -->
+													<img src="images/gallery-two-img5.jpg" class="ytimage">
+													<div class="ytbutton">
+														<a class='ytbtn' href='https://www.youtube.com/watch?v=RsyChGBw1nw' target="_blank"><i class='fab fa-youtube'></i></a>
+													</div>
+												</div>
+										    </li>
+
+										    <li>
+												<div class="gal2"> <!-- Gallery image no : 6 -->
+													<img src="images/gallery-two-img6.jpg" class="ytimage">
+													<div class="ytbutton">
+														<a class='ytbtn' href='https://www.youtube.com/watch?v=yfKjnUOxJhY' target="_blank"><i class='fab fa-youtube'></i></a>
+													</div>
+												</div>
+										    </li>
+										    <li>
+												<div class="gal2"> <!-- Gallery image no : 7 -->
+													<img src="images/gallery-two-img7.jpg" class="ytimage">
+													<div class="ytbutton">
+														<a class='ytbtn' href='https://www.youtube.com/watch?v=X5js9NvD3HI' target="_blank"><i class='fab fa-youtube'></i></a>
+													</div>
+												</div>
+										    </li>
+										    <li>
+												<div class="gal2"> <!-- Gallery image no : 8 -->
+													<img src="images/gallery-two-img8.jpg" class="ytimage">
+													<div class="ytbutton">
+														<a class='ytbtn' href='https://www.youtube.com/watch?v=_omn4Okkev0' target="_blank"><i class='fab fa-youtube'></i></a>
+													</div>
+												</div>
+										    </li>
+											
+											<!-- Only For Mobile -->
+											<li class="mobile-display-on">
+												<div class="gal2"> <!-- Gallery image no : 9 -->
+													<img src="images/gallery-two-img9.jpg" class="ytimage">
+													<div class="ytbutton">
+														<a class='ytbtn' href='#' target="_blank"><i class='fab fa-youtube'></i></a>
+													</div>
+												</div>
+										    </li>
+											<!-- Only For Mobile -->
+											
+										</ul>
+										<div class="clearfix"></div>
+									</div>
+								</div>
+							</div>
+							<div class="md-overlay"></div><!-- the overlay element -->
+				</div>
+			</section>
+
+<!--=============================================================================================================-->
+
+<section class="promo-section" id="connect">
+    <div class="container">
+        <div class="row">
+            <h2 class="banner-connect">Visita nuestra tienda online</h2>
+			<br />
+			<div class="connect-left wow slideInDown" data-wow-duration="300" data-wow-delay="300">
+				<a href='http://dbstudio.ecwid.com/' target="_blank" class="button-extra promo_btn button-type-extra button-box">TIENDA</a>
+			</div>
+        </div>
+    </div>
+</section>
+
+<!--=============================================================================================================-->
 			
 			<section id="contact-section"> <!-- Contact info Section-->
-			
-			<!-- this is dummy heading for W3-Validation approval you can remove it if you want -->
-			<h2 class="w3-validation">For W3 Validation</h2>
-			<!-- this is dummy heading for W3-Validation approval you can remove it if you want -->
 			
 			        <div class="contact"  data-wow-delay="0.0s" id="contact">
 					       	<div class="container">
 							       	<div class="col-md-7 contact-left wow fadeInLeft">
-   			                            <a href="#" class="button-one contact_btn button-type-one button-box">Contactanos</a>
-   			                            <h4>Aliquam ac justo interdum, elementum ligula et, condimentum orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+   			                            <a href="#" class="button-one contact_btn button-type-one button-box">Contacto</a>
+   			                            
 										<div class="contact-info">
 												<ul class="contact-list-one">
 												   <li><h5>Info:</h5></li>
-												   <!-- <li>Phone : <span class="bold">+ 123-456-789-456</span></li>
-												   <li>Fax : <span class="bold">+ 123-456-789-456</span></li> -->
-												   <li>Email : <a href="mailto:"> contacto@dbstudio.com.ve</a></li>
-												   <li>Address : <span class="bold">Barquisimeto, Venezuela</span></li>
+												   <li>WhatsApp: <span class="bold">+58 424-584-5551</span></li>
+												   <li>Email: <a href="mailto:"> dbstudiove@gmail.com</a></li>
+												   <li>Direccion: <span class="bold">Barquisimeto, Venezuela</span></li>
 												</ul>
 												<ul class="contact-list-two">
-												   <li><h5>Work Hours:</h5></li>
-												   <li>Monday-Friday : <span class="bold">18pm - 22pm</span></li>
-												   <li>SaturdaY : <span class="bold">08am - 14pm</span></li>
-												   <li>Sunday : <span class="bold">closed</span></li>
+												   <li><h5>Horario:</h5></li>
+												   <li>Lunes-Viernes: <span class="bold">09am - 06pm</span></li>
+												   <li>Sabado: <span class="bold">09am - 01pm</span></li>
+												   <li>Domingo: <span class="bold">Cerrado</span></li>
 												</ul>
 												<div class="clearfix"> </div>
 										</div>
-										<ul class="contact-social">
-											<li><a href=""><i class="fb"> </i> </a></li>
-											<li><a href=""><i class="tw"> </i> </a></li>
-											<li><a href=""><i class="tumb"> </i> </a></li>
-											<li><a href=""><i class="linked"> </i> </a></li>
-											<li><a href=""><i class="pinterest"> </i> </a></li>
-											<li><a href=""><i class="google"> </i> </a></li>
-										</ul>
+								        <div class="social-link">
+								          <a class='instagram' href='https://www.instagram.com/dbstudiove/' target="_blank"><i class='fab fa-instagram'></i></a>
+								          <a class='youtube' href='https://www.youtube.com/channel/UCTueZXgO8_-33D9S3jLj3pw' target="_blank"><i class='fab fa-youtube'></i></a>
+								          <a class='facebook' href='https://www.facebook.com/dbstudiove/' target="_blank"><i class='fab fa-facebook-f'></i></a>
+								          <a class='twitter' href='https://twitter.com/dbstudiove' target="_blank"><i class='fab fa-twitter'></i></a>
+								          <a class='soundcloud' href='http://www.soundcloud.com/dbstudiove' target="_blank"><i class='fab fa-soundcloud'></i></a>
+								          <!--<a class='tumblr' href='http://dbstudiove.tumblr.com/' target="_blank"><i class='fab fa-tumblr'></i></a>-->
+								        </div>
 									</div>
 									<div class="col-md-5 wow fadeInRight">
 										<div class="contact-form">
 											<form method="post">
-												<input type="text" class="textbox" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}">
+												<input type="text" class="textbox" value="Nombre" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}">
 												<input type="text" class="textbox" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}">
-												<textarea onfocus="this.value= '';" onblur="if (this.value == '') {this.value = 'Message';}">Message
+												<textarea onfocus="this.value= '';" onblur="if (this.value == '') {this.value = 'Message';}">Mensaje
 												</textarea>
-												<label class="button-two button-type-two"><input type="submit" value="Message"></label>
+												<label class="button-two button-type-two"><input type="submit" value="Enviar"></label>
 											</form>
 										</div>
 									</div>
    	                        </div>
 					</div>
 			</section>
+
+<!--=============================================================================================================-->
 			
-			<section id="footer-section"> <!-- Footer Section -->
-			
-			<!-- this is dummy heading for W3-Validation approval you can remove it if you want -->
-			<h2 class="w3-validation">For W3 Validation</h2>
-			<!-- this is dummy heading for W3-Validation approval you can remove it if you want -->
-			
-				<div class="container">
-					<div class="row">
-					    <nav class="footer-nav">
-						    <ul class="nav-list wow fadeInDown" id="footer-menu">
-							    <li><a href="#">Inicio</a></li>
-								<li><a href="#about" class="scroll">Nosotros</a></li>
-								<li><a href="#services" class="scroll">Servicios</a></li>
-								<!-- logo -->
-								<li class="logo"><a href="index.html"><img src="images/logo.png" width="140" alt=""/></a></li>
-								<!-- logo -->
-								<li><a href="#releases" class="scroll">Lanzamientos</a></li>
-								<li><a href="#store" class="scroll">Tienda</a></li>
-								<li><a href="#contact" class="scroll">Contacto</a></li>
-							</ul>
-						</nav>
-						<p class="copyright wow fadeInUp">&copy; 2018 dbStudio. Todos los derechos reservados.</p>
+			<footer id="footer-section"> <!-- Footer Section -->
+
+				<div class="footer-main">
+					<div class="container">
+						<div class="row">
+					    	<nav class="footer-nav">
+						    	<ul class="nav-list cl-effect-5 wow fadeInDown" id="footer-menu">
+									<li><a href="#"><span data-hover="INICIO">Inicio</span></a></li>
+									<li><a href="#about"><span data-hover="NOSOTROS">Nosotros</span></a></li>
+									<li><a href="#services"><span data-hover="SERVICIOS">Servicios</span></a></li>
+									<!-- logo -->
+									 <li class="logo"><a href="index.html"><img src="images/logo.png" alt=""/></a></li>
+									<!-- logo -->
+									<li><a href="#gallery"><span data-hover="PORTFOLIO">Portfolio</span></a></li>
+									<li><a href='http://dbstudio.ecwid.com/' target="_blank"><span data-hover="TIENDA">Tienda</span></a></li>
+									<li><a href="#contact"><span data-hover="CONTACTO">Contacto</span></a></li>
+								</ul>
+							</nav>
+						</div>
 					</div>
-				</div>
-			</section>
-						
-			<script type="text/javascript" charset="utf-8">
-			  $(document).ready(function(){
-				$("a[rel^='prettyPhoto']").prettyPhoto();
-			  });
-			</script>
-						
+				
+					<div class="footer text-center">
+						<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+						<p class="copyright wow fadeInUp">&copy; 2019 dbStudio. All Right Reserved.</p>
+	  				</div>
+	  			</div>	
+			</footer>
+			
+<!--=============================================================================================================-->
+			
 			<script type="text/javascript">
 						$(document).ready(function() {
 							/*
@@ -761,7 +550,6 @@
 							
 						});
 			</script>
-			
-			<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+			<script src="js/main.js"></script>
 		</body>
 </html>		
