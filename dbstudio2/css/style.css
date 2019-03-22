@@ -750,6 +750,11 @@ i.like{
     line-height: 20px;
     text-align: left;
 }
+.contact_grid{
+	background:#f2efe5;
+	padding:12em 7em 0;
+	min-height:505px;
+}
 /***--- Newsletter ---***/
 .newsletter_grid{
 	background:#f2efe5;
